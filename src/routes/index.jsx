@@ -1,10 +1,5 @@
-import Login from '../containers/Login'
-import NotFound from '../containers/NotFound'
-import ArticleList from '../containers/Articles'
-import ArticleEdit from '../containers/Articles/edit'
-import Settings from '../containers/Settings'
-import DashBoard from '../containers/DashBoard'
 
+import {Login, NotFound, Settings, ArticleList, ArticleEdit, DashBoard} from '../containers'
 export const mainRouter  = [{
   pathname: '/login',
   component: Login
