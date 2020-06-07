@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {getArticles} from '../../requests/index'
 import { Card, Button, Table} from 'antd'
 const dataSource = [
   {
@@ -33,6 +34,12 @@ const columns = [
   },
 ];
 export default class ArticleList extends Component {
+  componentDidMount(){
+    getArticles()
+      .then(resp=>{
+        console.log(resp)
+      })
+  }
   render() {
     return (
       <Card title="文章列表" extra={<Button>导出excel</Button>} bordered={false}>
