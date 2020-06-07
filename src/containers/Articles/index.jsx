@@ -46,6 +46,7 @@ export default class ArticleList extends Component {
         <Table 
           dataSource={dataSource}
           columns={columns}
+          pagination={{hideOnSinglePage:true}}
         />
       </Card>
     )
